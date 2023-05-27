@@ -39,7 +39,19 @@ export default function InicioView() {
 
     return (
         <div>
-            <h1 className='titulo'>Aplicacion de Machine Learning que predice el rendimiento de empresas estadounidenses </h1>
+            <img className='imagenIzquierda' src='/img/bandera.png/' alt='imagenIz' />
+            <h1 className='titulo'>US Stock Performance Predictor</h1>
+           
+            <p className='parrafo'> Bienvenido a US Stock Performance Predictor, 
+            aquí encontrarás una herramienta revolucionaria que te brinda la oportunidad de adentrarte en el 
+            emocionante mundo de las inversiones en acciones. </p>
+            <p className='parrafo2'>¿Te has sentido intimidado por la falta 
+            de conocimientos financieros o por la posibilidad de sufrir pérdidas económicas? ¡No te preocupes 
+            más! Hemos desarrollado una aplicación basada en inteligencia artificial y aprendizaje automático 
+            que te ayudará a tomar decisiones informadas y maximizar tus ganancias. Descubre cómo pronosticamos 
+            el rendimiento de empresas estadounidenses 
+            utilizando variables económicas clave y cómo implementamos este conocimiento en una aplicación web fácil de usar. 
+            ¡Prepárate para invertir con confianza y alcanzar tus metas financieras a largo plazo!</p>
             <button className='botonInicio' onClick={showAlert}>Continuar</button>
             <Animacion />
         </div>

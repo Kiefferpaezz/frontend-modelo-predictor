@@ -7,6 +7,9 @@ const Informacion = () => {
             <p>Jhonatan Tamayo Morales 
                 Kieffer Alexander Paez Rozo
                 Proyecto Integrador 2
+                Ingenieria de Sistemas
+                Universidad de Antioquia
+                2023
                 </p>
         </div>
     );

@@ -62,6 +62,7 @@ export default function FormIndices() {
 
   const handleClean = () => {
     setIndices(JSON.parse(JSON.stringify(initialIndices)))
+    setData(null)
     // hacer un swal con temporizador
     swal({
       title: 'Limpio',

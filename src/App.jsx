@@ -1,11 +1,7 @@
-import MainRoutes from "./routes/Routes"
-
+import MainRoutes from './routes/Routes'
 
 function App() {
-
-  return (
-    <MainRoutes />
-  )
+  return <MainRoutes />
 }
 
 export default App

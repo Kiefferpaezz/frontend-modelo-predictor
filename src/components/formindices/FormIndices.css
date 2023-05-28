@@ -1,0 +1,65 @@
+.form-indices__wrapper {
+  width: 90%;
+}
+.form-indices {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1rem;
+  font-size: large;
+}
+.form-indices__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.form-indices__buttons {
+  display: flex;
+  place-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.form-indices__buttons button {
+  height: 50px;
+  padding: 0 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #868484;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-indices__buttons button:hover {
+  background-color: #5e5e5e;
+  color: white;
+  transform: scale(1.05);
+}
+
+.field_continer {
+  z-index: 1;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.field_continer input {
+  height: 27px;
+  padding: 0 0.5rem;
+  max-width: 130px;
+  font-size: medium;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.7);
+}
+
+.form-indices__result {
+  width: 100%;
+  display: flex;
+  place-content: center;
+  font-size: larger;
+}

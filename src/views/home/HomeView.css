@@ -1,0 +1,141 @@
+.home-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.home-view__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+}
+
+@media screen and (max-width: 500px) {
+  .home-view__container {
+    width: 98%;
+    padding: 1rem;
+  }
+  .home-view__container__buttons {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .home-view__container__buttons__info__card {
+    left: -75px;
+  }
+  .img_backgroung {
+    opacity: 0.05;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .home-view__container {
+    width: 87%;
+    padding: 1rem;
+  }
+  .home-view__container__buttons {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home-view__container {
+    width: 80%;
+    padding: 2rem;
+  }
+  .home-view__container__buttons {
+    gap: 1rem;
+    padding: 2rem 3rem;
+  }
+}
+
+.home-view__container__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  place-content: center;
+  padding: 1rem 0;
+}
+
+.img_backgroung {
+  opacity: 0.1;
+}
+
+.home-view__container__title {
+  z-index: 1;
+  padding: 3rem 0 0 0;
+}
+.home-view__container__content {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: larger;
+  padding: 0 2rem;
+}
+
+.home-view__container__buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.home-view__container__buttons__info__card {
+  position: absolute;
+  bottom: 7px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  gap: 0.2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: medium;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-view__info__card_continer {
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.open_card_continer_info {
+  overflow: visible;
+}
+
+.home-view__btn {
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: gray;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: larger;
+}
+
+.home-view__btn:hover {
+  color: white;
+  font-weight: bold;
+  transform: scale(1.05);
+}

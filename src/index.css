@@ -1,5 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    background-color: #faebd7;
-    min-width: 740px;
-  }
+  font-family: cursive, Helvetica, Arial, sans-serif;
+  min-width: 400px;
+  background-color: #e0e8f3;
+}
+
+#root {
+  height: 100vh;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}

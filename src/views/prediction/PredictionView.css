@@ -1,3 +1,7 @@
+.prediction-view__container__title{
+  font-family: cursive;
+}
+
 .prediction-view {
   display: flex;
   justify-content: center;

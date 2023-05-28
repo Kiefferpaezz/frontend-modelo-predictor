@@ -1,3 +1,11 @@
+.predic_excel_view__container__title{
+  font-family: cursive;
+}
+
+.form-file-excel__label{
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .predic_excel_view {
   display: flex;
   justify-content: center;
@@ -84,6 +92,7 @@
   font-size: large;
   border-radius: 10px;
   padding: 0 1rem;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .form-file-excel__buttons {

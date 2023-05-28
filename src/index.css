@@ -5,9 +5,9 @@
 }
 
 body {
-  font-family: cursive, Helvetica, Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Courier, monospace;
   min-width: 400px;
-  background-color: #e0e8f3;
+  background-color: #90ee9035;
 }
 
 #root {

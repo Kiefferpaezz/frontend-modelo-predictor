@@ -11,6 +11,10 @@ export default function FormIndices() {
   const [error, setError] = useState(null)
   const [data, setData] = useState(null)
 
+  const redirectToSpecificLink = () => {
+    window.location.href = 'https://www.google.com'
+  }
+
   const handleSetIndices = (idx, value) => {
     if (value !== '') {
       value = parseFloat(value)
@@ -96,7 +100,10 @@ export default function FormIndices() {
             )
           })}
         </div>
-        <div className='form-indices__buttons'>
+        <div className='form-indices__buttons a'>
+          <a href="https://docs.google.com/document/d/19TlSlxN3YqU0PpdwSjxCx1yuSOkWG_VkF0WCKzt2QLY/edit" target="_blank" rel="noopener noreferrer">
+            Documentacion
+          </a>
           <button type='button' onClick={handleClean}>
             Limpiar
           </button>

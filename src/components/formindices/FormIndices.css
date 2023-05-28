@@ -7,6 +7,8 @@
   gap: 3rem;
   padding: 1rem;
   font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  
 }
 .form-indices__container {
   display: flex;
@@ -33,6 +35,29 @@
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.form-indices__buttons a {
+  height: 50px;
+  padding: 0 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #868484;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.form-indices__buttons a:hover{
+  background-color: #5e5e5e;
+  color: white;
+  transform: scale(1.05);
 }
 
 .form-indices__buttons button:hover {

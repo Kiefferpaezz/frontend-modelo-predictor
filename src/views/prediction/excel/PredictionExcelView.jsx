@@ -22,6 +22,26 @@ function jsonToXlsx(data, filename) {
   XLSX.writeFile(workbook, `${filename}.xlsx`)
 }
 
+const procesarFilaInput = (data) => {
+  let res = {}
+  for (let i = 0; i < columnNames.length; i++) {
+    res[columnNames[i]] = data[i]
+  }
+  return res
+}
+
+const procesarJsonToXlsx = (results, input) => {
+  const res = []
+  for (let i = 0; i < results.length; i++) {
+    res.push({
+      ...procesarFilaInput(input[i]),
+      Prediccion: results[i]
+    })
+  }
+  console.log(res)
+  return res
+}
+
 function xlsxToJson(file) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader()
@@ -52,6 +72,7 @@ function getDataExample() {
 
 export default function PredictionExcelView() {
   const [data, setData] = useState(null)
+  const [input, setInput] = useState(null)
   const [responseOriginal, setResponseOriginal] = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
@@ -103,10 +124,11 @@ export default function PredictionExcelView() {
         setLoading(true)
         setError(null)
         console.log(res)
+        setInput(res)
         fetchData({ inputToFetch: res })
           .then((res) => res.data)
           .then((res) => {
-            setResponseOriginal(res.resultado)
+            setResponseOriginal(res.resultado[0])
             const dataProcesed = processData(res.resultado)
             setData(dataProcesed)
             setError(null)
@@ -139,7 +161,8 @@ export default function PredictionExcelView() {
   }
   const handleDownloadPrediction = () => {
     try {
-      jsonToXlsx(responseOriginal, 'prediccion')
+      const dataProcesed = procesarJsonToXlsx(responseOriginal, input)
+      jsonToXlsx(dataProcesed, 'prediccion')
     } catch (err) {
       swal('Error', 'Hubo un error al descargar el archivo', 'error')
     }
